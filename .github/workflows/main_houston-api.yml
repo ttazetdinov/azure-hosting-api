@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'production'
+      name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -51,6 +51,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'houston-api'
-          slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bbd7762c5904450587b352f86074071d }}
+          slot-name: 'Production'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_23502E6ECC8C48D2AFA301743D865386 }}
           package: .
