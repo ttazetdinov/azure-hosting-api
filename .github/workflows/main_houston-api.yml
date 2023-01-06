@@ -58,5 +58,5 @@ jobs:
         with:
           app-name: 'houston-api'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bbd7762c5904450587b352f86074071d }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_23502E6ECC8C48D2AFA301743D865386 }}
           package: .
